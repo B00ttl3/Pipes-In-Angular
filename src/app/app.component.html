@@ -6,4 +6,12 @@
 
 <!-- custom pipes: if the built-in pipes are not able to transform the type of data that you wnat, then you can built your own custom pipes to make that thing work -->
 
-<!-- custom pipes working starts -->
+
+
+<!-- Uppercase Pipe, by using simple JS we have to first make a functiona nd then have ti impliment it again and again but by using Angular we can just make the word go uppercase by just adding | this is pipe symbol and then just typig uppercase and also have to import UpperCasePipe inside the TS file and it will do the Magic -->
+
+<h1> {{ title }} </h1>
+<button (click)="upperCase()" >upper case</button>
+
+<h1>{{ title | uppercase }}</h1>
+
