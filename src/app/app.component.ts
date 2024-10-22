@@ -5,12 +5,13 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [
     UpperCasePipe,
+    LowerCasePipe
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title: string = 'angular app';
+  title: string = 'ANGULAR APP';
 
   upperCase() {
     this.title = this.title.toUpperCase();
