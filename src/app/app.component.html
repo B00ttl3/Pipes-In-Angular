@@ -11,15 +11,23 @@
 <!-- Uppercase Pipe, by using simple JS we have to first make a functiona nd then have ti impliment it again and again but by using Angular we can just make the word go uppercase by just adding | this is pipe symbol and then just typig uppercase and also have to import UpperCasePipe inside the TS file and it will do the Magic -->
 
 <h1> {{ title }} </h1>
-<button (click)="upperCase()" >upper case</button>
+<!-- <button (click)="upperCase()" >upper case</button> -->
+<!-- this upper example is by using simple JavaScript -->
 
-<h1>{{ title | uppercase }}</h1>
+<!-- this lower example is by using Angular -->
+<!-- <h1>{{ title | uppercase }}</h1> -->
 
 <!-- LowerCae Pipe: Same like uppercase we can just import LowerCasePipe in ts file and just put lowecase after | here in HTML and all good  -->
 
-<h2>{{ title | lowercase }}</h2>
+<!-- <h2>{{ title | lowercase }}</h2> -->
 
 
 <!-- Titlecase Pipe: means putting everything in a title case. means first letter of every word will be capital and rest will be small. Like This -->
 
-<h1>{{ title | titlecase }}</h1>
+<!-- <h1>{{ title | titlecase }}</h1> -->
+
+
+
+<!-- Number Pipes: This pipe is used to make the numbers to be in proper way like 1,234 means adding comas to make it properly readable. for this we just added the DecimalPipe in our TS file and just put number after the pipe symbol here in HTML -->
+
+<h1>{{ 1324657.89 | number }}</h1>

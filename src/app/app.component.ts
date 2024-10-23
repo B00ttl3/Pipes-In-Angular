@@ -1,4 +1,4 @@
-import { LowerCasePipe, TitleCasePipe, UpperCasePipe } from '@angular/common';
+import { DecimalPipe, LowerCasePipe, TitleCasePipe, UpperCasePipe } from '@angular/common';
 import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   imports: [
     UpperCasePipe,
     LowerCasePipe,
-    TitleCasePipe
+    TitleCasePipe,
+    DecimalPipe
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
