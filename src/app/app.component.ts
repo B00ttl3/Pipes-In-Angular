@@ -1,4 +1,4 @@
-import { DecimalPipe, LowerCasePipe, PercentPipe, TitleCasePipe, UpperCasePipe } from '@angular/common';
+import { CurrencyPipe, DecimalPipe, LowerCasePipe, PercentPipe, TitleCasePipe, UpperCasePipe } from '@angular/common';
 import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
     LowerCasePipe,
     TitleCasePipe,
     DecimalPipe,
-    PercentPipe
+    PercentPipe,
+    CurrencyPipe
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
