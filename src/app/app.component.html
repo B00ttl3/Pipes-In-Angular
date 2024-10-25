@@ -48,3 +48,11 @@
 <!-- If we want to show the currency code instead of symbol use the parameter below. after the code add another : and then put 'code' to show the code instead of the currency symbol -->
 
 <h2>{{ 2000 | currency : 'EUR' : 'code' }}</h2>
+
+
+<!-- Date & Time Pipe: The angular can not render the date itself, so we have to use JavaScript to render the date and time, for this we will make a variable and then make it = to the new Date() with which we will be able to render the today's date and time. and to make it look like good date we will use the date pipe and make it look professional date. And after parameterizing the pipe with 'short' 'medium' 'Long' & 'full' we can choose that which type of time and date we want to show in our site -->
+ 
+<h1>{{ today | date : 'short' }}</h1>
+<h1>{{ today | date : 'medium' }}</h1>
+<h1>{{ today | date : 'Long' }}</h1>
+<h1>{{ today | date : 'full' }}</h1>

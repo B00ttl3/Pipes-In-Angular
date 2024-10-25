@@ -1,4 +1,4 @@
-import { CurrencyPipe, DecimalPipe, LowerCasePipe, PercentPipe, TitleCasePipe, UpperCasePipe } from '@angular/common';
+import { CurrencyPipe, DatePipe, DecimalPipe, LowerCasePipe, PercentPipe, TitleCasePipe, UpperCasePipe } from '@angular/common';
 import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
@@ -9,13 +9,15 @@ import { Component } from '@angular/core';
     TitleCasePipe,
     DecimalPipe,
     PercentPipe,
-    CurrencyPipe
+    CurrencyPipe,
+    DatePipe,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
   title: string = 'ANGULAR APP';
+  today = new Date();
 
   upperCase() {
     this.title = this.title.toUpperCase();
