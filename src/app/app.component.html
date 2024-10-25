@@ -38,9 +38,13 @@
 
 <!-- Currency Pipe: Just to make the value to be in dollar currency we will use it. same as others first add the currency pipe in TS file and then add it here. -->
 
-<h1>{{ 2000 | currency }}</h1>
+<!-- <h1>{{ 2000 | currency }}</h1> -->
 
 
 <!-- Parameterzied Angular Pipes: so by default the currency sign which will be added is dollar. so if we want to change it we have to specify which sign we want, like for pound we will put the currency code of pund which is GBP inside the '' after the : after the currency pipe. similar to GBP we can add EUR for euro sign and others as well -->
 
 <h1>{{ 2000 | currency : 'GBP' }}</h1>
+
+<!-- If we want to show the currency code instead of symbol use the parameter below. after the code add another : and then put 'code' to show the code instead of the currency symbol -->
+
+<h2>{{ 2000 | currency : 'EUR' : 'code' }}</h2>
