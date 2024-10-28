@@ -64,6 +64,11 @@
 
 <h1>{{ today | date : 'dd-MM-yyyy' }}</h1>
 
-<!-- incase we want to show the month in short form of its full month, then we will just use MMM instead of MM  -->
+<!-- incase we want to show the month in short form of its full month, then we will just use MMM instead of MM. and for Long form just use MMMM  -->
 
 <h1>{{ today | date : 'MMM-dd-yyyy' }}</h1>
+
+
+<!-- Time Formats: If we just want to show the time, just use hh for hours mm for minutes and then a to show if it is am or pm -->
+
+<h1>{{ today | date : 'hh:mm a' }}</h1>
