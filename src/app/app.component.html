@@ -63,3 +63,7 @@
 <!-- we only want to show the date, for that we will tell the format in which we want t show the date after the pipe. like dd for day then - then MM for months. not slowercase mm case lowercase mm shows the minutes not the month. and then yyyy for year after -. In this case it will only show us the current date -->
 
 <h1>{{ today | date : 'dd-MM-yyyy' }}</h1>
+
+<!-- incase we want to show the month in short form of its full month, then we will just use MMM instead of MM  -->
+
+<h1>{{ today | date : 'MMM-dd-yyyy' }}</h1>
