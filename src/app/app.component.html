@@ -78,7 +78,9 @@
 <h2>{{ today | date : 'HH:mm z' }}</h2>
 
 
-<!-- JSON Pipes: -->
+<!-- JSON Pipes: as the view can not read the object. so we use the JSON pipe so that it can easily read the object inside the TS file. same as other pipes add JsonPipe inside the TS file and then put the json after the pipe symbol here in HTML -->
 
-<h1>{{ user }}</h1>
+<h1>{{ user | json }}</h1>
+
 <button (click)="convertJson()" > Convert to JSON </button>
+<!-- This button way is the JS way and not Angular way -->
