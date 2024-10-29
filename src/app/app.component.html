@@ -73,6 +73,12 @@
 
 <h1>{{ today | date : 'hh:mm a' }}</h1>
 
-<!-- incase we want to show the 24 hour format. then use HH instead of hh. Simple -->
+<!-- incase we want to show the 24 hour format. then use HH instead of hh. Simple. and if you also want ot show the timezone. simply put z at the end like hh:mm a z to show the timezone at the end -->
 
-<h2>{{ today | date : 'HH:mm' }}</h2>
+<h2>{{ today | date : 'HH:mm z' }}</h2>
+
+
+<!-- JSON Pipes: -->
+
+<h1>{{ user }}</h1>
+<button (click)="convertJson()" > Convert to JSON </button>

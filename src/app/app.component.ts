@@ -23,4 +23,14 @@ export class AppComponent {
     this.title = this.title.toUpperCase();
     // this is JavaScript way not angular way
   }
+
+  user: any = {
+    name: 'Umair Munir',
+    age: 30,
+    email: 'work@gmail.com'
+  }
+
+  convertJson() {
+    this.user =  JSON.stringify(this.user);
+  }
 }
