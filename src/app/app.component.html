@@ -88,4 +88,7 @@
 
 <!-- Slice Pipe: If you want to extract the portion of a string. In the example below we wanted to show just Angular and not Hello. so after putting | symbol and then slice we will have to give the parameter with it, as the slice pipe works with the parameter. So in here we will count from which word number we want to start including the space. so Hello have 5 words but as in JS we know that 0 is 1 so here the H is not 1 but 0 and then the rest, exclude them and the A is the 6th word so we will start with that -->
 
-<h1>{{'Hello Angular' | slice : 5 }}</h1>
+<h1>{{'Hello Angular World' | slice : 5 }}</h1>
+<!-- in the example above we are extracting the words after the specific. What if we want to extract a specific word from inbetween two words? use the example below. with two parameters. one from where the word will start, second where it will end -->
+
+<h1>{{ 'Hello Angular World' | slice : 5 :13 }}</h1>
