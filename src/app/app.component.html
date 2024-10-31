@@ -82,7 +82,7 @@
 
 <h1>{{ user | json }}</h1>
 
-<button (click)="convertJson()" > Convert to JSON </button>
+<!-- <button (click)="convertJson()" > Convert to JSON </button> -->
 <!-- This button way is the JS way and not Angular way -->
 
 
@@ -92,3 +92,9 @@
 <!-- in the example above we are extracting the words after the specific. What if we want to extract a specific word from inbetween two words? use the example below. with two parameters. one from where the word will start, second where it will end -->
 
 <h1>{{ 'Hello Angular World' | slice : 5 :13 }}</h1>
+
+
+
+<!-- Chaining pipes: applying multiple pipes to one template, or value. To do so, just add another pipe symbol and which pipe you want to add at the end of the first pipe and its parameters if there are any -->
+
+<h1>{{ 'Hello Angular World' | slice :5 :13 | uppercase }}</h1>
